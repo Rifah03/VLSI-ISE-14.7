@@ -1,0 +1,3 @@
+vhdl work "NAND-gate.vhd"
+vhdl work "AND-gate.vhd"
+vhdl work "AND-gate-tb.vhd"

@@ -1,0 +1,7 @@
+work	"AND-gate.vhd"
+work	"NAND-gate.vhd"
+work	"OR-gate.vhd"
+work	"XOR-gate.vhd"
+work	"bit8-full-adder.vhd"
+work	"full-adder.vhd"
+work	"half-adder.vhd"

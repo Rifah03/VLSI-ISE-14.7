@@ -1,0 +1,33 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/ise/full-adder-two/bit8_full_adder_tb_isim_beh.exe -prj /home/ise/full-adder-two/bit8_full_adder_tb_beh.prj work.bit8_full_adder_tb 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/ise/full-adder-two/NAND-gate.vhd" into library work
+Parsing VHDL file "/home/ise/full-adder-two/XOR-gate.vhd" into library work
+Parsing VHDL file "/home/ise/full-adder-two/AND-gate.vhd" into library work
+Parsing VHDL file "/home/ise/full-adder-two/OR-gate.vhd" into library work
+Parsing VHDL file "/home/ise/full-adder-two/half-adder.vhd" into library work
+Parsing VHDL file "/home/ise/full-adder-two/full-adder.vhd" into library work
+Parsing VHDL file "/home/ise/full-adder-two/bit8-full-adder.vhd" into library work
+Parsing VHDL file "/home/ise/full-adder-two/bit8-full-adder-tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 95588 KB
+Fuse CPU Usage: 890 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture dataflow of entity NAND_gate [nand_gate_default]
+Compiling architecture structural of entity XOR_gate [xor_gate_default]
+Compiling architecture structural of entity AND_gate [and_gate_default]
+Compiling architecture structural of entity half_adder [half_adder_default]
+Compiling architecture structural of entity OR_gate [or_gate_default]
+Compiling architecture structural of entity full_adder [full_adder_default]
+Compiling architecture structural of entity bit8_full_adder [bit8_full_adder_default]
+Compiling architecture behavior of entity bit8_full_adder_tb
+Time Resolution for simulation is 1ps.
+Compiled 17 VHDL Units
+Built simulation executable /home/ise/full-adder-two/bit8_full_adder_tb_isim_beh.exe
+Fuse Memory Usage: 104184 KB
+Fuse CPU Usage: 910 ms
+GCC CPU Usage: 160 ms

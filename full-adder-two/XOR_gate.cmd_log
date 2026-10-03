@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/ise/full-adder-two/XOR_gate.xst" -ofn "/home/ise/full-adder-two/XOR_gate.syr" 
