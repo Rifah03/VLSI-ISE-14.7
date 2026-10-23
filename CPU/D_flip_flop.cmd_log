@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/ise/CPU/D_flip_flop.xst" -ofn "/home/ise/CPU/D_flip_flop.syr" 

@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/ise/CPU/or_gate.xst" -ofn "/home/ise/CPU/or_gate.syr" 

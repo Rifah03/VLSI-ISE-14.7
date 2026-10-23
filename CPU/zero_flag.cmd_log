@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/ise/CPU/zero_flag.xst" -ofn "/home/ise/CPU/zero_flag.syr" 

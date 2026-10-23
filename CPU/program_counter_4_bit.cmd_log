@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/ise/CPU/program_counter_4_bit.xst" -ofn "/home/ise/CPU/program_counter_4_bit.syr" 

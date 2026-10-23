@@ -1,0 +1,660 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Reading design: cpu_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "cpu_top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "cpu_top"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : cpu_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/ise/CPU/NAND_gate.vhd" into library work
+Parsing entity <NAND_gate>.
+Parsing architecture <Dataflow> of entity <nand_gate>.
+Parsing VHDL file "/home/ise/CPU/xor_gate.vhd" into library work
+Parsing entity <xor_gate>.
+Parsing architecture <Structural> of entity <xor_gate>.
+Parsing VHDL file "/home/ise/CPU/and_gate.vhd" into library work
+Parsing entity <and_gate>.
+Parsing architecture <Structural> of entity <and_gate>.
+Parsing VHDL file "/home/ise/CPU/or_gate.vhd" into library work
+Parsing entity <or_gate>.
+Parsing architecture <Structural> of entity <or_gate>.
+Parsing VHDL file "/home/ise/CPU/half_adder.vhd" into library work
+Parsing entity <half_adder>.
+Parsing architecture <Structural> of entity <half_adder>.
+Parsing VHDL file "/home/ise/CPU/full_adder.vhd" into library work
+Parsing entity <full_adder>.
+Parsing architecture <Structural> of entity <full_adder>.
+Parsing VHDL file "/home/ise/CPU/D_flip_flop.vhd" into library work
+Parsing entity <D_flip_flop>.
+Parsing architecture <Behavioral> of entity <d_flip_flop>.
+Parsing VHDL file "/home/ise/CPU/register_8_bit.vhd" into library work
+Parsing entity <register_8_bit>.
+Parsing architecture <Structural> of entity <register_8_bit>.
+Parsing VHDL file "/home/ise/CPU/not_gate.vhd" into library work
+Parsing entity <not_gate>.
+Parsing architecture <Structural> of entity <not_gate>.
+Parsing VHDL file "/home/ise/CPU/instruction_decoder.vhd" into library work
+Parsing entity <instruction_decoder>.
+Parsing architecture <Structural> of entity <instruction_decoder>.
+Parsing VHDL file "/home/ise/CPU/bit_8_full_adder.vhd" into library work
+Parsing entity <bit_8_full_adder>.
+Parsing architecture <Structural> of entity <bit_8_full_adder>.
+Parsing VHDL file "/home/ise/CPU/zero_flag.vhd" into library work
+Parsing entity <zero_flag>.
+Parsing architecture <Behavioral> of entity <zero_flag>.
+Parsing VHDL file "/home/ise/CPU/program_rom.vhd" into library work
+Parsing entity <program_rom>.
+Parsing architecture <Structural> of entity <program_rom>.
+Parsing VHDL file "/home/ise/CPU/program_counter_4_bit.vhd" into library work
+Parsing entity <program_counter_4_bit>.
+Parsing architecture <Behavioral> of entity <program_counter_4_bit>.
+Parsing VHDL file "/home/ise/CPU/control_unit.vhd" into library work
+Parsing entity <control_unit>.
+Parsing architecture <Structural> of entity <control_unit>.
+Parsing VHDL file "/home/ise/CPU/alu_8bit.vhd" into library work
+Parsing entity <alu_8bit>.
+Parsing architecture <Structural> of entity <alu_8bit>.
+Parsing VHDL file "/home/ise/CPU/accumulator_8bit.vhd" into library work
+Parsing entity <accumulator_8bit>.
+Parsing architecture <Structural> of entity <accumulator_8bit>.
+Parsing VHDL file "/home/ise/CPU/cpu_top.vhd" into library work
+Parsing entity <cpu_top>.
+Parsing architecture <Structural> of entity <cpu_top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <cpu_top> (architecture <Structural>) from library <work>.
+
+Elaborating entity <program_counter_4_bit> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <program_rom> (architecture <Structural>) from library <work>.
+INFO:HDLCompiler:679 - "/home/ise/CPU/program_rom.vhd" Line 49. Case statement is complete. others clause is never selected
+
+Elaborating entity <control_unit> (architecture <Structural>) from library <work>.
+
+Elaborating entity <instruction_decoder> (architecture <Structural>) from library <work>.
+
+Elaborating entity <alu_8bit> (architecture <Structural>) from library <work>.
+
+Elaborating entity <bit_8_full_adder> (architecture <Structural>) from library <work>.
+
+Elaborating entity <full_adder> (architecture <Structural>) from library <work>.
+
+Elaborating entity <half_adder> (architecture <Structural>) from library <work>.
+
+Elaborating entity <xor_gate> (architecture <Structural>) from library <work>.
+
+Elaborating entity <NAND_gate> (architecture <Dataflow>) from library <work>.
+
+Elaborating entity <and_gate> (architecture <Structural>) from library <work>.
+
+Elaborating entity <or_gate> (architecture <Structural>) from library <work>.
+
+Elaborating entity <not_gate> (architecture <Structural>) from library <work>.
+
+Elaborating entity <accumulator_8bit> (architecture <Structural>) from library <work>.
+
+Elaborating entity <register_8_bit> (architecture <Structural>) from library <work>.
+
+Elaborating entity <D_flip_flop> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <zero_flag> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <cpu_top>.
+    Related source file is "/home/ise/CPU/cpu_top.vhd".
+INFO:Xst:3210 - "/home/ise/CPU/cpu_top.vhd" line 110: Output port <JZ> of the instance <CU1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/CPU/cpu_top.vhd" line 110: Output port <INVALID> of the instance <CU1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/ise/CPU/cpu_top.vhd" line 136: Output port <COUT> of the instance <ALU1> is unconnected or connected to loadless signal.
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <cpu_top> synthesized.
+
+Synthesizing Unit <program_counter_4_bit>.
+    Related source file is "/home/ise/CPU/program_counter_4_bit.vhd".
+    Found 4-bit register for signal <count>.
+    Found 4-bit adder for signal <count[3]_GND_5_o_add_0_OUT> created at line 1241.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 D-type flip-flop(s).
+Unit <program_counter_4_bit> synthesized.
+
+Synthesizing Unit <program_rom>.
+    Related source file is "/home/ise/CPU/program_rom.vhd".
+    Found 16x8-bit Read Only RAM for signal <INSTRUCTION>
+    Summary:
+	inferred   1 RAM(s).
+Unit <program_rom> synthesized.
+
+Synthesizing Unit <control_unit>.
+    Related source file is "/home/ise/CPU/control_unit.vhd".
+    Summary:
+	no macro.
+Unit <control_unit> synthesized.
+
+Synthesizing Unit <instruction_decoder>.
+    Related source file is "/home/ise/CPU/instruction_decoder.vhd".
+    Found 8x6-bit Read Only RAM for signal <_n0015>
+    Summary:
+	inferred   1 RAM(s).
+Unit <instruction_decoder> synthesized.
+
+Synthesizing Unit <alu_8bit>.
+    Related source file is "/home/ise/CPU/alu_8bit.vhd".
+    Found 8-bit 4-to-1 multiplexer for signal <RESULT> created at line 64.
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <alu_8bit> synthesized.
+
+Synthesizing Unit <bit_8_full_adder>.
+    Related source file is "/home/ise/CPU/bit_8_full_adder.vhd".
+    Summary:
+	no macro.
+Unit <bit_8_full_adder> synthesized.
+
+Synthesizing Unit <full_adder>.
+    Related source file is "/home/ise/CPU/full_adder.vhd".
+    Summary:
+	no macro.
+Unit <full_adder> synthesized.
+
+Synthesizing Unit <half_adder>.
+    Related source file is "/home/ise/CPU/half_adder.vhd".
+    Summary:
+	no macro.
+Unit <half_adder> synthesized.
+
+Synthesizing Unit <xor_gate>.
+    Related source file is "/home/ise/CPU/xor_gate.vhd".
+    Summary:
+	no macro.
+Unit <xor_gate> synthesized.
+
+Synthesizing Unit <NAND_gate>.
+    Related source file is "/home/ise/CPU/NAND_gate.vhd".
+    Summary:
+	no macro.
+Unit <NAND_gate> synthesized.
+
+Synthesizing Unit <and_gate>.
+    Related source file is "/home/ise/CPU/and_gate.vhd".
+    Summary:
+	no macro.
+Unit <and_gate> synthesized.
+
+Synthesizing Unit <or_gate>.
+    Related source file is "/home/ise/CPU/or_gate.vhd".
+    Summary:
+	no macro.
+Unit <or_gate> synthesized.
+
+Synthesizing Unit <not_gate>.
+    Related source file is "/home/ise/CPU/not_gate.vhd".
+    Summary:
+	no macro.
+Unit <not_gate> synthesized.
+
+Synthesizing Unit <accumulator_8bit>.
+    Related source file is "/home/ise/CPU/accumulator_8bit.vhd".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <accumulator_8bit> synthesized.
+
+Synthesizing Unit <register_8_bit>.
+    Related source file is "/home/ise/CPU/register_8_bit.vhd".
+    Summary:
+	no macro.
+Unit <register_8_bit> synthesized.
+
+Synthesizing Unit <D_flip_flop>.
+    Related source file is "/home/ise/CPU/D_flip_flop.vhd".
+    Found 1-bit register for signal <Q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <D_flip_flop> synthesized.
+
+Synthesizing Unit <zero_flag>.
+    Related source file is "/home/ise/CPU/zero_flag.vhd".
+    Summary:
+	no macro.
+Unit <zero_flag> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x8-bit single-port Read Only RAM                    : 1
+ 8x6-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 1
+ 4-bit adder                                           : 1
+# Registers                                            : 9
+ 1-bit register                                        : 8
+ 4-bit register                                        : 1
+# Multiplexers                                         : 7
+ 1-bit 2-to-1 multiplexer                              : 1
+ 2-bit 2-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 3
+ 8-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <AND1> is unconnected in block <HA1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <AND1> is unconnected in block <HA2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <OR1> is unconnected in block <FA7>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <NAND1> is unconnected in block <XOR1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <NAND3> is unconnected in block <XOR1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <AND1> is unconnected in block <HA2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <NAND2> is unconnected in block <OR1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <NAND1> is unconnected in block <XOR1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <NAND3> is unconnected in block <XOR1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <AND1> is unconnected in block <HA1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <NAND1> is unconnected in block <OR1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <NAND1> is unconnected in block <XOR1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <NAND3> is unconnected in block <XOR1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <AND1> is unconnected in block <HA1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <NAND1> is unconnected in block <OR1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <NAND1> is unconnected in block <XOR1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <NAND3> is unconnected in block <XOR1>.
+   It will be removed from the design.
+
+Synthesizing (advanced) Unit <instruction_decoder>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0015> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 6-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <OPCODE>        |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <instruction_decoder> synthesized (advanced).
+
+Synthesizing (advanced) Unit <program_counter_4_bit>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <program_counter_4_bit> synthesized (advanced).
+
+Synthesizing (advanced) Unit <program_rom>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_INSTRUCTION> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <ADDRESS>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <INSTRUCTION>   |          |
+    -----------------------------------------------------------------------
+Unit <program_rom> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x8-bit single-port distributed Read Only RAM        : 1
+ 8x6-bit single-port distributed Read Only RAM         : 1
+# Counters                                             : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 8
+ Flip-Flops                                            : 8
+# Multiplexers                                         : 7
+ 1-bit 2-to-1 multiplexer                              : 1
+ 2-bit 2-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 3
+ 8-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <register_8_bit> ...
+
+Optimizing unit <cpu_top> ...
+
+Optimizing unit <alu_8bit> ...
+
+Optimizing unit <bit_8_full_adder> ...
+INFO:Xst:2261 - The FF/Latch <ACC1/REG1/FF4/Q> in Unit <cpu_top> is equivalent to the following 3 FFs/Latches, which will be removed : <ACC1/REG1/FF5/Q> <ACC1/REG1/FF6/Q> <ACC1/REG1/FF7/Q> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block cpu_top, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 9
+ Flip-Flops                                            : 9
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : cpu_top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 35
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 1
+#      LUT3                        : 1
+#      LUT4                        : 14
+#      LUT5                        : 7
+#      LUT6                        : 8
+#      MUXF7                       : 2
+# FlipFlops/Latches                : 9
+#      FDC                         : 9
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 22
+#      IBUF                        : 1
+#      OBUF                        : 21
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:               9  out of  126800     0%  
+ Number of Slice LUTs:                   32  out of  63400     0%  
+    Number used as Logic:                32  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     32
+   Number with an unused Flip Flop:      23  out of     32    71%  
+   Number with an unused LUT:             0  out of     32     0%  
+   Number of fully used LUT-FF pairs:     9  out of     32    28%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                          23
+ Number of bonded IOBs:                  23  out of    210    10%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 9     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.333ns (Maximum Frequency: 428.669MHz)
+   Minimum input arrival time before clock: 0.666ns
+   Maximum output required time after clock: 1.453ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 2.333ns (frequency: 428.669MHz)
+  Total number of paths / destination ports: 143 / 9
+-------------------------------------------------------------------------
+Delay:               2.333ns (Levels of Logic = 4)
+  Source:            PC1/count_2 (FF)
+  Destination:       ACC1/REG1/FF3/Q (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: PC1/count_2 to ACC1/REG1/FF3/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             25   0.361   0.799  PC1/count_2 (PC1/count_2)
+     LUT6:I0->O            1   0.097   0.000  ALU1/ADDER/FA3/HA2/XOR1/NAND4/Y21_G (N13)
+     MUXF7:I1->O           2   0.279   0.299  ALU1/ADDER/FA3/HA2/XOR1/NAND4/Y21 (ALU1/ADDER/FA3/HA2/XOR1/NAND4/Y2)
+     LUT6:I5->O            1   0.097   0.295  ACC1/Mmux_REG_INPUT41 (ACC1/Mmux_REG_INPUT4)
+     LUT5:I4->O            1   0.097   0.000  ACC1/Mmux_REG_INPUT42 (ACC1/REG_INPUT<3>)
+     FDC:D                     0.008          ACC1/REG1/FF3/Q
+    ----------------------------------------
+    Total                      2.333ns (0.939ns logic, 1.394ns route)
+                                       (40.3% logic, 59.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 9 / 9
+-------------------------------------------------------------------------
+Offset:              0.666ns (Levels of Logic = 1)
+  Source:            RESET (PAD)
+  Destination:       PC1/count_0 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: RESET to PC1/count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   0.001   0.316  RESET_IBUF (RESET_IBUF)
+     FDC:CLR                   0.349          PC1/count_0
+    ----------------------------------------
+    Total                      0.666ns (0.350ns logic, 0.316ns route)
+                                       (52.5% logic, 47.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 45 / 20
+-------------------------------------------------------------------------
+Offset:              1.453ns (Levels of Logic = 2)
+  Source:            ACC1/REG1/FF4/Q (FF)
+  Destination:       ZERO_OUT (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: ACC1/REG1/FF4/Q to ZERO_OUT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              8   0.361   0.715  ACC1/REG1/FF4/Q (ACC1/REG1/FF4/Q)
+     LUT5:I0->O            1   0.097   0.279  ZF1/ZERO<7>1 (ZERO_OUT_OBUF)
+     OBUF:I->O                 0.000          ZERO_OUT_OBUF (ZERO_OUT)
+    ----------------------------------------
+    Total                      1.453ns (0.458ns logic, 0.995ns route)
+                                       (31.5% logic, 68.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    2.333|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 11.71 secs
+ 
+--> 
+
+
+Total memory usage is 604240 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   17 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+

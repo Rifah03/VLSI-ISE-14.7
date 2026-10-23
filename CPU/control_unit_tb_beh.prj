@@ -1,0 +1,3 @@
+vhdl work "instruction_decoder.vhd"
+vhdl work "control_unit.vhd"
+vhdl work "control_unit_tb.vhd"

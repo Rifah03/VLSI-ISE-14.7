@@ -1,0 +1,3 @@
+vhdl work "D_flip_flop.vhd"
+vhdl work "register_8_bit.vhd"
+vhdl work "accumulator_8bit.vhd"

@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/ise/CPU/half_adder.xst" -ofn "/home/ise/CPU/half_adder.syr" 

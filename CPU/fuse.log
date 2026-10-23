@@ -1,0 +1,56 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/ise/CPU/cpu_top_tb_isim_beh.exe -prj /home/ise/CPU/cpu_top_tb_beh.prj work.cpu_top_tb 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/ise/CPU/NAND_gate.vhd" into library work
+Parsing VHDL file "/home/ise/CPU/xor_gate.vhd" into library work
+Parsing VHDL file "/home/ise/CPU/and_gate.vhd" into library work
+Parsing VHDL file "/home/ise/CPU/or_gate.vhd" into library work
+Parsing VHDL file "/home/ise/CPU/half_adder.vhd" into library work
+Parsing VHDL file "/home/ise/CPU/full_adder.vhd" into library work
+Parsing VHDL file "/home/ise/CPU/D_flip_flop.vhd" into library work
+Parsing VHDL file "/home/ise/CPU/register_8_bit.vhd" into library work
+Parsing VHDL file "/home/ise/CPU/not_gate.vhd" into library work
+Parsing VHDL file "/home/ise/CPU/instruction_decoder.vhd" into library work
+Parsing VHDL file "/home/ise/CPU/bit_8_full_adder.vhd" into library work
+Parsing VHDL file "/home/ise/CPU/zero_flag.vhd" into library work
+Parsing VHDL file "/home/ise/CPU/program_rom.vhd" into library work
+Parsing VHDL file "/home/ise/CPU/program_counter_4_bit.vhd" into library work
+Parsing VHDL file "/home/ise/CPU/control_unit.vhd" into library work
+Parsing VHDL file "/home/ise/CPU/alu_8bit.vhd" into library work
+Parsing VHDL file "/home/ise/CPU/accumulator_8bit.vhd" into library work
+Parsing VHDL file "/home/ise/CPU/cpu_top.vhd" into library work
+Parsing VHDL file "/home/ise/CPU/cpu_top_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 97380 KB
+Fuse CPU Usage: 1010 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture behavioral of entity program_counter_4_bit [program_counter_4_bit_default]
+Compiling architecture structural of entity program_rom [program_rom_default]
+Compiling architecture structural of entity instruction_decoder [instruction_decoder_default]
+Compiling architecture structural of entity control_unit [control_unit_default]
+Compiling architecture dataflow of entity NAND_gate [nand_gate_default]
+Compiling architecture structural of entity xor_gate [xor_gate_default]
+Compiling architecture structural of entity and_gate [and_gate_default]
+Compiling architecture structural of entity half_adder [half_adder_default]
+Compiling architecture structural of entity or_gate [or_gate_default]
+Compiling architecture structural of entity full_adder [full_adder_default]
+Compiling architecture structural of entity bit_8_full_adder [bit_8_full_adder_default]
+Compiling architecture structural of entity not_gate [not_gate_default]
+Compiling architecture structural of entity alu_8bit [alu_8bit_default]
+Compiling architecture behavioral of entity D_flip_flop [d_flip_flop_default]
+Compiling architecture structural of entity register_8_bit [register_8_bit_default]
+Compiling architecture structural of entity accumulator_8bit [accumulator_8bit_default]
+Compiling architecture behavioral of entity zero_flag [zero_flag_default]
+Compiling architecture structural of entity cpu_top [cpu_top_default]
+Compiling architecture behavior of entity cpu_top_tb
+Time Resolution for simulation is 1ps.
+Compiled 40 VHDL Units
+Built simulation executable /home/ise/CPU/cpu_top_tb_isim_beh.exe
+Fuse Memory Usage: 112168 KB
+Fuse CPU Usage: 1110 ms
+GCC CPU Usage: 2070 ms

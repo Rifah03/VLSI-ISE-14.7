@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/ise/CPU/cpu_top_tb_isim_beh.exe" -prj "/home/ise/CPU/cpu_top_tb_beh.prj" "work.cpu_top_tb" 
